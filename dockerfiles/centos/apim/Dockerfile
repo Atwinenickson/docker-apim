@@ -17,7 +17,7 @@
 # ------------------------------------------------------------------------
 
 # set base Docker image to CentOS Docker image
-FROM openshift/ruby-20-centos7
+FROM ubuntu:20.04
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
