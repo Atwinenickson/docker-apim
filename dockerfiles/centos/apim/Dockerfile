@@ -21,6 +21,9 @@ FROM openshift/ruby-20-centos7
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
+
+USER root
+
 # install JDK Dependencies
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar \
     && yum clean all
